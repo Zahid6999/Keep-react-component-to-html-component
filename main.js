@@ -93,3 +93,16 @@ window.addEventListener('click', (e) => {
     modalContainer.classList.add('hidden')
   }
 })
+
+// Modal-2-----------------
+const modalButton2 = document.getElementById('modal-btn2')
+const modalContainer2 = document.querySelector('.modal2')
+
+modalButton2.addEventListener('click', () => {
+  modalContainer2.classList.remove('hidden')
+})
+window.addEventListener('click', (e) => {
+  if (e.target === modalContainer2) {
+    modalContainer2.classList.add('hidden')
+  }
+})
