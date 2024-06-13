@@ -106,3 +106,89 @@ window.addEventListener('click', (e) => {
     modalContainer2.classList.add('hidden')
   }
 })
+
+
+
+
+// Input Number----------------------------------------
+const plusBtn = document.querySelector('.plusBtn')
+const minusBtn = document.querySelector('.minusBtn')
+const inputField = document.querySelector('.inputField')
+
+plusBtn.addEventListener('click', () => {
+  const previousValue = parseInt(inputField.value)
+  inputField.value = previousValue + 1
+});
+
+minusBtn.addEventListener('click', () => {
+  const previousValue = parseInt(inputField.value)
+  inputField.value = previousValue - 1
+})
+
+
+// Label With Input---------------------
+const plusBtn2 = document.querySelector('.plusBtn2')
+const minusBtn2 = document.querySelector('.minusBtn2')
+const inputField2 = document.getElementById('inputField2')
+
+plusBtn2.addEventListener('click', () => {
+  const previousValue = parseInt(inputField2.value)
+  inputField2.value = previousValue + 1
+});
+minusBtn2.addEventListener('click', () => {
+  const previousValue = parseInt(inputField2.value)
+  inputField2.value = previousValue - 1
+})
+
+
+// -------Popover----------
+const popoverContainer = document.getElementById('popover-container')
+const firstPopoverBtn = document.getElementById('firstPopover')
+const firstPopoverContent = document.getElementById('firstPopoverContent')
+
+firstPopoverBtn.addEventListener('click', () => {
+  firstPopoverContent.classList.remove('hidden')
+})
+window.addEventListener('click', function (e) {
+  if (e.target === popoverContainer) {
+    firstPopoverContent.classList.add('hidden')
+  }
+})
+
+
+// Second popover--------------------
+const secondPopover = document.getElementById('secondPopover')
+const secondPopoverContent = document.getElementById('secondPopoverContent')
+secondPopover.addEventListener('click', function () {
+  secondPopoverContent.classList.remove('hidden')
+})
+window.addEventListener('click', function (e) {
+  if (e.target === popoverContainer) {
+    secondPopoverContent.classList.add('hidden')
+  }
+})
+
+// Third Popover------------------------------
+const thirdPopoverBtn = document.getElementById('thirdPopover')
+const thirdPopoverContent = document.getElementById('thirdPopoverContent')
+thirdPopoverBtn.addEventListener('click', function () {
+  thirdPopoverContent.classList.remove('hidden')
+})
+window.addEventListener('click', function (e) {
+  if (e.target === popoverContainer) {
+    thirdPopoverContent.classList.add('hidden')
+  }
+})
+
+
+// forth Popover------------------------------
+const forthPopoverBtn = document.getElementById('forthPopover')
+const forthPopoverContent = document.getElementById('forthPopoverContent')
+forthPopoverBtn.addEventListener('click', function () {
+  forthPopoverContent.classList.remove('hidden')
+})
+window.addEventListener('click', function (e) {
+  if (e.target === popoverContainer) {
+    forthPopoverContent.classList.add('hidden')
+  }
+})
